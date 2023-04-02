@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+@font-face {
+    font-family: 'eras';
+    src: url(../asset/Ersa-Font/eras-light-5871822a2e706.otf);
+}
+
+@font-face {
+    font-family: 'eras demi';
+    src: url(../asset/Ersa-Font/eras-demi-587182767b329.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+
+}
+
+.cyan{
+    color: cyan;
+}
+
+a {
+    text-decoration-line: none;
+    color: white;
+}
+
+.first-page {
+    height: 100vh;
+    background-color: rgb(24, 23, 23);
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    gap: 60%;
+    height: 8%;
+    text-align: right;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-left: 6.9%;
+}
+
+.nav-bar-menu {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    transition-duration: 0.5s;
+}
+
+.nav-bar-menu a:hover{
+    scale: 1.1;
+}
+
+.CV{
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    border: solid 1px white;
+    padding: 15px;
+    transition-duration: 1s;
+}
+
+.CV:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+
+.first-page-tech {
+    position: absolute;
+    bottom: -50%;
+    opacity: 0.2;
+}
+
+.hero{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3%;
+    padding-bottom: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-service{
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    height: auto;
+    height: 300px;
+    width: 400px;
+    z-index: 2;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    padding: 1%;
+    color: blue;
+
+    transition-duration: 0.8s;
+    color: white;
+}
+
+.hero-service:hover{
+    scale: 1.1;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 20px 20px rgb(255, 255, 255, 0.2);
+}
+
+.hero-service-image{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-service-image img {
+    width: 100px;
+    height: auto;
+}
+
+.hero-servie-nom {
+    font-size: 1em;
+    font-family: 'eras demi';
+}
+
+.hero-service-presentation {
+    font-family: 'eras';
+    text-align: center;
+    justify-content: center;
+    line-height: 1.45em;
+    padding-top: 1%;
+}
+
+.hero-service-presentation img {
+    height: 4%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .first-page{
+        height: auto;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .nav-bar{
+        align-items:center;
+        justify-content: space-around;
+        margin: unset;
+        gap: unset;
+        margin-top: 3.5%;
+        padding: 3%;
+        position: relative;
+    }
+
+    .nav-bar-menu{
+        align-items: center;
+        justify-content: center;
+        padding: 0 auto;
+    }
+    
+    .CV{
+        visibility: hidden;
+        position: absolute;
+        right: -10%;
+    }
+
+    .margin-bottom{
+        margin-bottom: 10%;
+    }
+
+    .hero-service:hover{
+        scale: unset;
+        color: white;
+        background-color: unset;
+        border-radius: unset;
+        box-shadow: unset;
+    }
+}

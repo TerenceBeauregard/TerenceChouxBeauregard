@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+@font-face {
+    font-family: 'eras';
+    src: url(../asset/Ersa-Font/eras-light-5871822a2e706.otf);
+}
+
+@font-face {
+    font-family: 'eras demi';
+    src: url(../asset/Ersa-Font/eras-demi-587182767b329.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white; /* NE pas oublier de commenter cette partie la a la fin */
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+.first-page { 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.espace-top{
+    margin-top: 4%;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    gap: 60%;
+    height: 8%;
+    text-align: right;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-left: 6.9%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-bar-menu {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    transition-duration: 0.5s;
+}
+
+.nav-bar-menu a:hover{
+    scale: 1.1;
+}
+
+.cyan{
+    color: cyan;
+    scale: 1.1;
+}
+
+.CV{
+    background-color: white;
+    color: black;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: solid 1px black;
+    padding: 15px;
+    transition-duration: 1s;
+}
+
+.CV:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.double-pres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projet-princ {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 600px;
+    gap: 20px;
+    /* border: solid 1px blue;   Ne pas oublier d'enlever les bordures */
+    /* border: solid 1px black; */
+    color: black;
+    font-family: 'eras';
+    margin:  1.5% 2%;
+    border-radius: 20px;
+    justify-content: space-around;
+    /* background-color: whitesmoke; */
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    position: relative;
+}
+  
+
+.projet-princ img {
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+    border: solid 1px black;
+}
+
+.projet-princ h2{
+    font-size: 2.5em;
+}
+
+.projet-princ h3{
+    font-size: 2em;
+}
+
+.projet-princ p{
+    font-size: 1.2em;
+}
+
+.railway a{
+    color: rgb(0, 255, 255);
+}
+
+@media screen and (max-width: 1024px) {
+
+    .first-page{
+        height: auto;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .nav-bar{
+        align-items:center;
+        justify-content: space-around;
+        margin: unset;
+        gap: unset;
+        margin-top: 3.5%;
+        padding: 3%;
+        position: relative;
+    }
+
+    .nav-bar-menu{
+        align-items: center;
+        justify-content: center;
+        padding: 0 auto;
+    }
+    
+    .CV{
+        visibility: hidden;
+        position: absolute;
+        right: -10%;
+    }
+
+    .double-pres{
+        flex-direction: column;
+    }
+
+    .projet-princ{
+        width: 700px;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    
+    .projet-princ{
+        width: 300px;
+        height: auto;
+    }
+
+    .projet-princ img{
+        height: 200px;
+        width: auto;
+    }
+
+    .projet-princ p{
+        visibility: hidden;
+        position: absolute;
+    }
+
+}
